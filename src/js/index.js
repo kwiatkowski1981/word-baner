@@ -27,30 +27,19 @@ const addLetter = () => {
     // Użyj w środku setTimeout
 
     setTimeout(() => {
-
         for (let i = 0; i < txt.length; i++) {
             let word = txt[i];
-
             setTimeout(() => {
                 // console.log(word);
             spnText.textContent = "";
-
                 for (let j = 0; j < word.length; j++) {
-
                     setTimeout(()=> {
                         spnText.textContent += word[j];
                     }, j * timeLetters)
-
                 }
-
             },  i* timeWordsSwitch);
-
         }
-
     }, timeFirstWord)
-
-
-
 
 }
 
