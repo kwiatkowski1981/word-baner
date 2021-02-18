@@ -3,11 +3,20 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+div {
+  font-family: roboto;
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 60px;
+  letter-spacing: 1px;
+}
+
+.cursor {
+  opacity: 0;
+  transition: .2s;
+}
+
+
+.cursor.active {
+  opacity: 1;
 }
